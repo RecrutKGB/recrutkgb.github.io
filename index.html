@@ -7,7 +7,7 @@
     </head>
     <body>
 		<article>
-			<header>
+			<header id="head">
 				<div class="header logo"></div>
 				<div class="header gamer">
 					<span class="txt">
@@ -18,8 +18,8 @@
 				<div class="header fighters">
 					<span class="txt">
 					<strong>Бойцы</strong><br>
-					Всего: 38<br><span class="stars"><span class="star"></span>- 162</span>
-					<span class="stars"><span class="star"></span>- 0</span>
+					Всего: 38<br>
+					<span class="star"></span>- 162 <span class="crown"></span>- 0
 					</span>
 				</div>
 				<div class="header online">
@@ -29,7 +29,7 @@
 					</span>
 				</div>
 			</header>
-			<div class="frame">
+			<div id="frame">
 				<div class="hero hero-0 equip-1 hidden">
 					<div class="name fs8">Ангелина<br>Миресида</div>
 					<div class="level">78</div>
@@ -511,7 +511,37 @@
 					</div>
 				</div>
 			</div>
-			
+			<footer id="foot">
+				<span class="footer txt">
+					<div class="footer label">Отряд для защиты</div>
+					<div class="footer place place-1"></div>
+					<div class="footer place place-2"></div>
+					<div class="footer place place-3"></div>
+					<div class="footer place place-4"></div>
+					<div class="footer place place-5"></div>
+				</span>
+			</footer>
 		</article>
     </body>
+	<script type="text/JavaScript">
+		var footer;
+		var header;
+		var frame;
+			
+		onload = changeFrame;
+		window.onresize = changeFrame;
+		
+		function changeFrame() {
+			header = document.getElementById("head");
+			footer = document.getElementById("foot");
+			frame = document.getElementById("frame");
+			
+			var frame_h = clientHeight() - header.clientHeight - footer.clientHeight;
+			frame.style.height = frame_h + "px";
+		}
+		
+		function clientHeight() {
+			return document.documentElement.clientHeight == 0 ? document.body.clientHeight : document.documentElement.clientHeight;
+		}
+	</script>
 </html>
