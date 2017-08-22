@@ -1,0 +1,10 @@
+body {
+	display: block;
+	text-align: center;
+}
+#star {
+	width: 150px;
+	height: 200px;
+	background: yellowgreen;
+	content: "";
+}

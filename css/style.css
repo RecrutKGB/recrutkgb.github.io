@@ -1,0 +1,464 @@
+/* 
+Исользуемые цвета
+wheat - основная заливка
+beige - рамки
+
+Текст
+*/
+body {
+	background: wheat;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+header strong {
+	font-size: 1.7em;
+}	
+
+header {
+	position: relative;
+	display: block;
+	/* height: 210px; */
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+
+.star {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 18px;
+	top: -9px;
+	background: url("../img/star.png") no-repeat 50% 0;
+	background-size: 100%;
+}
+
+.stars > .star {
+	top: auto;
+	width: 43;
+	height: 40;
+	background-size: 100%;
+}
+
+.header {
+	position: relative;
+	display: inline-block;
+	width: 300px;
+	height: 120px;
+	margin: 20px;
+	font-size: 1.7em;
+	border: 1px solid tan;
+	border-radius: 5px;
+	box-shadow: 0 3px 3px 0 tan;
+}
+
+.txt {
+	display: table-cell;
+	width: 300px;
+	height: 120px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.stars {
+	/* margin-left: 0px; */
+}
+
+.logo {
+	width: 550;
+	height: 120;
+	border: none;
+	background: wheat url("../img/logo.png") no-repeat 50% 50%;
+	background-size: 100%;
+	border: 1px solid tan;
+	border-radius: 5px;
+	box-shadow: 0 3px 3px 0 tan;
+}
+
+.online {
+	margin: 20px;
+	width: 400px;
+	height: 120px;
+	text-align: right;
+}
+
+.online .txt {
+	width: 400px;
+	height: 120px;
+}
+
+.frame {
+	position: relative;
+	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 3px groove beige;
+	background: url("../img/bg/main.jpg") repeat 50% 0;
+	padding: 10px;
+}
+
+.hero {
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 200px;
+	margin: 10px;
+	border: 4px ridge wheat;
+	border-radius: 10px;
+	text-align: center;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+.hero .name {
+	display: table-cell;
+	width: 150px;
+	height: 30px;
+	border-radius: 6px 6px 0px 0px;
+	background: rgba(0, 0, 0, 0.7);
+	vertical-align: middle;
+	color: white;
+}
+
+.hero .level {
+	position: absolute;
+	color: white;
+	right: 6px;
+	top: 36px;
+	padding: 1px;
+	min-width: 20px;
+	background: rgba(0, 0, 0, 0.7);
+	font-size: 1em;
+}
+
+.hero .starBox {
+	height: 15px;
+	border-radius: 0px 0px 6px 6px;
+	margin-top: 155px;
+}
+
+/*
+
+Размеры шрифта имён
+
+*/
+.fs8 {
+	font-size: 0.8em;
+}
+.fs9 {
+	font-size: 0.9em;
+}
+
+/*
+
+Герои по цветам
+
+ */
+	/* Герои с экипировкой 1 уровня */
+		/* Имена, белые */
+.equip-1 .name
+{
+	color: white;
+}
+		/* starBox'ы коричневые */
+.equip-1 .starBox
+{
+	background: linear-gradient(to right, rgb(100,75,50), rgb(160,130,105) 25%, rgb(160,130,105) 75%, rgb(100,75,50));
+}
+
+	/* Зелёные 2 - 3 уровень экипировки */
+		/* Имена */
+.equip-2 .name,
+.equip-3 .name
+{
+	color: lawngreen;
+}
+		/* starBox'ы */
+.equip-2 .starBox,
+.equip-3 .starBox
+{
+	background: linear-gradient(to right, forest­green, lawngreen 25%, lawngreen 75%, forest­green);
+}
+
+	/* Голубые 4 - 5 уровень экипировки */
+		/* Имена */
+.equip-4 .name,
+.equip-5 .name
+{
+	color: blue;
+}
+		/* starBox'ы */
+.equip-4 .starBox,
+.equip-5 .starBox
+{
+	background: linear-gradient(to right, darkblue, blue 25%, blue 75%, darkblue);
+}
+
+	/* Фиолетовые 6 - 7 уровень экипировки */
+		/* Имена */
+.equip-6 .name,
+.equip-7 .name
+{
+	color: blueviolet;
+}
+		/* starBox'ы */
+.equip-6 .starBox,
+.equip-7 .starBox
+{
+	background: linear-gradient(to right, darkviolet, blueviolet 25%, blueviolet 75%, darkviolet);
+}
+
+	/* Оранжевые 8 - 10 уровень экипировки */
+		/* Имена */
+.equip-8 .name,
+.equip-9 .name,
+.equip-10 .name
+{
+	color: darkorange;
+}
+		/* starBox'ы */
+.equip-8 .starBox,
+.equip-9 .starBox,
+.equip-10 .starBox
+{
+	background: linear-gradient(to right, orangered, darkorange 25%, darkorange 75%, orangered);
+}
+
+	/* Красные 11 - 13 уровень экипировки */
+		/* Имена */
+.equip-11 .name,
+.equip-12 .name,
+.equip-13 .name
+{
+	color: blue;
+}
+		/* starBox'ы */
+.equip-11 .starBox,
+.equip-12 .starBox,
+.equip-13 .starBox
+{
+	background: linear-gradient(to right, darkblue, blue 25%, blue 75%, darkblue);
+}
+
+/*
+
+Картинки героев
+
+*/
+.hero-0 {
+	background: url("../img/hero/h0.jpg") no-repeat 50% 0;
+}
+
+.hero-1 {
+	background: url("../img/hero/h1.jpg") no-repeat 50% 0;
+}
+
+.hero-2 {
+	background: url("../img/hero/h2.jpg") no-repeat 50% 0;
+}
+
+.hero-3 {
+	background: url("../img/hero/h3.jpg") no-repeat 50% 0;
+}
+
+.hero-4 {
+	background: url("../img/hero/h4.jpg") no-repeat 50% 0;
+}
+
+.hero-5 {
+	background: url("../img/hero/h5.jpg") no-repeat 50% 0;
+}
+
+.hero-6 {
+	background: url("../img/hero/h6.jpg") no-repeat 50% 0;
+}
+
+.hero-7 {
+	background: url("../img/hero/h7.jpg") no-repeat 50% 0;
+}
+
+.hero-8 {
+	background: url("../img/hero/h8.jpg") no-repeat 50% 0;
+}
+
+.hero-9 {
+	background: url("../img/hero/h9.jpg") no-repeat 50% 0;
+}
+
+.hero-10 {
+	background: url("../img/hero/h10.jpg") no-repeat 50% 0;
+}
+
+.hero-11 {
+	background: url("../img/hero/h11.jpg") no-repeat 50% 0;
+}
+
+.hero-12 {
+	background: url("../img/hero/h12.jpg") no-repeat 50% 0;
+}
+
+.hero-13 {
+	background: url("../img/hero/h13.jpg") no-repeat 50% 0;
+}
+
+.hero-14 {
+	background: url("../img/hero/h14.jpg") no-repeat 50% 0;
+}
+
+.hero-15 {
+	background: url("../img/hero/h15.jpg") no-repeat 50% 0;
+}
+
+.hero-16 {
+	background: url("../img/hero/h16.jpg") no-repeat 50% 0;
+}
+
+.hero-17 {
+	background: url("../img/hero/h17.jpg") no-repeat 50% 0;
+}
+
+.hero-18 {
+	background: url("../img/hero/h18.jpg") no-repeat 50% 0;
+}
+
+.hero-19 {
+	background: url("../img/hero/h19.jpg") no-repeat 50% 0;
+}
+
+.hero-20 {
+	background: url("../img/hero/h20.jpg") no-repeat 50% 0;
+}
+
+.hero-21 {
+	background: url("../img/hero/h21.jpg") no-repeat 50% 0;
+}
+
+.hero-22 {
+	background: url("../img/hero/h22.jpg") no-repeat 50% 0;
+}
+
+.hero-23 {
+	background: url("../img/hero/h23.jpg") no-repeat 50% 0;
+}
+
+.hero-24 {
+	background: url("../img/hero/h24.jpg") no-repeat 50% 0;
+}
+
+.hero-25 {
+	background: url("../img/hero/h25.jpg") no-repeat 50% 0;
+}
+
+.hero-26 {
+	background: url("../img/hero/h26.jpg") no-repeat 50% 0;
+}
+
+.hero-27 {
+	background: url("../img/hero/h27.jpg") no-repeat 50% 0;
+}
+
+.hero-28 {
+	background: url("../img/hero/h28.jpg") no-repeat 50% 0;
+}
+
+.hero-29 {
+	background: url("../img/hero/h29.jpg") no-repeat 50% 0;
+}
+
+.hero-30 {
+	background: url("../img/hero/h30.jpg") no-repeat 50% 0;
+}
+
+.hero-31 {
+	background: url("../img/hero/h31.jpg") no-repeat 50% 0;
+}
+
+.hero-32 {
+	background: url("../img/hero/h32.jpg") no-repeat 50% 0;
+}
+
+.hero-33 {
+	background: url("../img/hero/h33.jpg") no-repeat 50% 0;
+}
+
+.hero-34 {
+	background: url("../img/hero/h34.jpg") no-repeat 50% 0;
+}
+
+.hero-35 {
+	background: url("../img/hero/h35.jpg") no-repeat 50% 0;
+}
+
+.hero-36 {
+	background: url("../img/hero/h36.jpg") no-repeat 50% 0;
+}
+
+.hero-37 {
+	background: url("../img/hero/h37.jpg") no-repeat 50% 0;
+}
+
+.hero-38 {
+	background: url("../img/hero/h38.jpg") no-repeat 50% 0;
+}
+
+.hero-39 {
+	background: url("../img/hero/h39.jpg") no-repeat 50% 0;
+}
+
+.hero-40 {
+	background: url("../img/hero/h40.jpg") no-repeat 50% 0;
+}
+
+.hero-41 {
+	background: url("../img/hero/h41.jpg") no-repeat 50% 0;
+}
+
+.hero-42 {
+	background: url("../img/hero/h42.jpg") no-repeat 50% 0;
+}
+
+.hero-43 {
+	background: url("../img/hero/h43.jpg") no-repeat 50% 0;
+}
+
+.hero-44 {
+	background: url("../img/hero/h44.jpg") no-repeat 50% 0;
+}
+
+.hero-45 {
+	background: url("../img/hero/h45.jpg") no-repeat 50% 0;
+}
+
+.hero-46 {
+	background: url("../img/hero/h46.jpg") no-repeat 50% 0;
+}
+
+.hero-47 {
+	background: url("../img/hero/h47.jpg") no-repeat 50% 0;
+}
+
+.hero-48 {
+	background: url("../img/hero/h48.jpg") no-repeat 50% 0;
+}
+
+.hero-49 {
+	background: url("../img/hero/h49.jpg") no-repeat 50% 0;
+}
+
+.hero-50 {
+	background: url("../img/hero/h50.jpg") no-repeat 50% 0;
+}
+
+.hero-51 {
+	background: url("../img/hero/h51.jpg") no-repeat 50% 0;
+}
+
+.hero-52 {
+	background: url("../img/hero/h52.jpg") no-repeat 50% 0;
+}
+
+.hidden {
+	/* display: none; */
+}
