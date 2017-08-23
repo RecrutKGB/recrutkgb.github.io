@@ -10,6 +10,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
+	user-select: none;
 }
 
 
@@ -48,6 +49,7 @@ header strong {
 	border: 1px solid tan;
 	border-radius: 5px;
 	box-shadow: 0 3px 3px 0 tan;
+	text-align: center;
 }
 
 .header .crown,
@@ -105,6 +107,7 @@ header .logo {
 }
 
 .hero .name {
+	position: relative;
 	display: table-cell;
 	width: 150px;
 	height: 30px;
