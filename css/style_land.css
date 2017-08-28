@@ -91,7 +91,6 @@ header .logo {
 	border: 3px groove beige;
 	background: url("../img/bg/main.jpg") repeat 50% 0;
 	padding: 5px;
-	height: 450px;
 }
 
 .hero {
@@ -112,6 +111,7 @@ header .logo {
 	display: table-cell;
 	width: 150px;
 	height: 30px;
+	padding: 0 10px;
 	border-radius: 6px 6px 0px 0px;
 	background: rgba(0, 0, 0, 0.7);
 	vertical-align: middle;

@@ -116,7 +116,7 @@ var gamers = [
 ] ;
 
 // Общее колличество героев
-var allHeroAmount=heroes.count();
+var allHeroAmount = heroesName.length;
 
 // Структура "Игрок"
 function Gamer (gamerID) {
@@ -134,7 +134,7 @@ function Gamer (gamerID) {
     this.crown = heroesInit.heroesCrown;
     // Герои
     this.heroes = heroesInit.heroes;
-} ;
+}
 
 // Заполняем структуру для героев
 function HeroesInit(gamerHeroes) {
@@ -143,11 +143,11 @@ function HeroesInit(gamerHeroes) {
     var heroesCrown = 0;    // Всего корон
     var arr = new Array();
 
-    for (var i=0; i<gamerHeroes.count(); i++) {
+    for (var i=0; i<gamerHeroes.length; i++) {
         if (gamerHeroes[i][1] !== 0) {
             heroesCount++;
             gamerHeroes[i][2] < 6 ? heroesStar++ : heroesCrown++;
-        };
+        }
 
         arr[i] = new Hero(i,heroesName[i],gamerHeroes[i]);
     }
@@ -155,7 +155,7 @@ function HeroesInit(gamerHeroes) {
     this.heroesCount = heroesCount;
     this.heroesStar = heroesStar;
     this.heroesCrown = heroesCrown;
-} ;
+}
 
 function Hero(heroID,heroName,heroELS) {
     this.ID = heroID;
@@ -163,4 +163,4 @@ function Hero(heroID,heroName,heroELS) {
     this.equip = heroELS[0];
     this.level = heroELS[1];
     this.star = heroELS[2];
-} ;
+}

@@ -8,3 +8,10 @@ body {
 	background: yellowgreen;
 	content: "";
 }
+
+.test-3 {
+	width: 100px;
+	height: 100px;
+	background: orangered;
+	content: "";
+}

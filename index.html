@@ -2,19 +2,18 @@
 <html lang=ru>
     <head>
         <meta charset="utf-8">
-        <title>Игрок: RecrutKGB</title>
+        <title id="title">Игрок: </title>
         <link rel="stylesheet" type="text/css" href="css/style_land.css" media="(orientation:landscape)">
         <link rel="stylesheet" type="text/css" href="css/style_port.css" media="(orientation:portrait)">
-		<script type="text/javascript" language="JavaScript" src="js/Gamer(gamerID).js"></script>
     </head>
     <body>
 		<article>
 			<header id="head">
 				<div class="header logo"></div>
 				<div class="header gamer">
-					<span class="txt">
+					<span id="gamerHeader" class="txt">
 					<strong>Игрок</strong><br>
-					Имя: RecrutKGB<br>Уровень: 78
+					Имя: <br>Уровень:
 					</span>
 				</div>
 				<div class="header fighters">
@@ -50,33 +49,35 @@
 				</span>
 			</footer>
 		</article>
+		<script type="text/JavaScript">
+            var footer;
+            var header;
+            var frame;
+
+            onload = changeFrame;
+            window.onresize = changeFrame;
+
+            function changeFrame() {
+                header = document.getElementById("head");
+                footer = document.getElementById("foot");
+                frame = document.getElementById("frame");
+
+                var frame_h = clientHeight() - header.clientHeight - footer.clientHeight - 15;
+                frame.style.height = frame_h + "px";
+                var frame_w = clientWidth() - 56;
+                frame.style.width = frame_w + "px";
+            }
+
+            function clientHeight() {
+                return document.documentElement.clientHeight == 0 ? document.body.clientHeight : document.documentElement.clientHeight;
+            }
+            function clientWidth() {
+                return document.documentElement.clientWidth == 0 ? document.body.clientWidth : document.documentElement.clientWidth;
+            }
+
+
+		</script>
+		<script type="text/javascript" language="JavaScript" src="js/Gamer(gamerID).js"></script>
+		<script type="text/javascript" language="JavaScript" src="js/heroes.js"></script>
     </body>
-	<script type="text/JavaScript">
-		var footer;
-		var header;
-		var frame;
-			
-		onload = changeFrame;
-		window.onresize = changeFrame;
-		
-		function changeFrame() {
-			header = document.getElementById("head");
-			footer = document.getElementById("foot");
-			frame = document.getElementById("frame");
-			
-			var frame_h = clientHeight() - header.clientHeight - footer.clientHeight - 15;
-			frame.style.height = frame_h + "px";
-			var frame_w = clientWidth() - 40;
-            frame.style.width = frame_w + "px";
-		}
-		
-		function clientHeight() {
-			return document.documentElement.clientHeight == 0 ? document.body.clientHeight : document.documentElement.clientHeight;
-		}
-        function clientWidth() {
-            return document.documentElement.clientWidth == 0 ? document.body.clientWidth : document.documentElement.clientWidth;
-        }
-
-
-	</script>
 </html>
