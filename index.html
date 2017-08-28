@@ -66,10 +66,17 @@
 			
 			var frame_h = clientHeight() - header.clientHeight - footer.clientHeight - 15;
 			frame.style.height = frame_h + "px";
+			var frame_w = clientWidth() - 40;
+            frame.style.width = frame_w + "px";
 		}
 		
 		function clientHeight() {
 			return document.documentElement.clientHeight == 0 ? document.body.clientHeight : document.documentElement.clientHeight;
 		}
+        function clientWidth() {
+            return document.documentElement.clientWidth == 0 ? document.body.clientWidth : document.documentElement.clientWidth;
+        }
+
+
 	</script>
 </html>
