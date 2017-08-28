@@ -27,6 +27,7 @@ body {
 
 hearder {
 	position: absolute;
+	width: 100%;
 	display: block;
 	top: 0;
 	width: 100%;
@@ -69,7 +70,7 @@ header strong {
 }
 
 header .logo {
-	background: url("../img/logo.png") no-repeat 50% 50%;
+	background: url("../img/logo.png") no-repeat 50% 0;
 	background-size: 100%;
 	border: 1px solid tan;
 	border-radius: 5px;

@@ -27,6 +27,7 @@ body {
 
 hearder {
 	position: absolute;
+	width: 100%;
 	display: block;
 	top: 0;
 	width: 100%;
@@ -69,8 +70,7 @@ header strong {
 }
 
 header .logo {
-	display: block;
-	background: url("../img/logo.png") no-repeat 50% 50%;
+	background: url("../img/logo.png") no-repeat 50% 0;
 	background-size: 100%;
 	border: 1px solid tan;
 	border-radius: 5px;
@@ -97,11 +97,11 @@ header .logo {
 .hero {
 	position: relative;
 	display: inline-block;
-	width: 210px;
-	height: 280px;
+	width: 150px;
+	height: 200px;
 	margin: 5px;
 	border: 4px ridge wheat;
-	border-radius: 15px;
+	border-radius: 10px;
 	text-align: center;
 	vertical-align: top;
 	font-weight: bold;
@@ -110,9 +110,9 @@ header .logo {
 .hero .name {
 	position: relative;
 	display: table-cell;
-	width: 210px;
-	height: 40px;
-	border-radius: 11px 11px 0px 0px;
+	width: 150px;
+	height: 30px;
+	border-radius: 6px 6px 0px 0px;
 	background: rgba(0, 0, 0, 0.7);
 	vertical-align: middle;
 	color: white;
@@ -121,8 +121,8 @@ header .logo {
 .hero .level {
 	position: absolute;
 	color: white;
-	right: 10px;
-	top: 50px;
+	right: 6px;
+	top: 36px;
 	padding: 1px;
 	min-width: 20px;
 	background: rgba(0, 0, 0, 0.7);
@@ -130,9 +130,9 @@ header .logo {
 }
 
 .hero .starBox {
-	height: 20px;
-	border-radius: 0px 0px 11px 11px;
-	margin-top: 220px;
+	height: 15px;
+	border-radius: 0px 0px 6px 6px;
+	margin-top: 155px;
 }
 
 /*
